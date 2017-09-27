@@ -1,6 +1,7 @@
-"""Hello Analytics Reporting API V4."""
+#!/usr/bin/env python3
 
 import argparse
+import json
 
 from apiclient.discovery import build
 from oauth2client.service_account import ServiceAccountCredentials
@@ -13,8 +14,8 @@ from oauth2client import tools
 SCOPES = ['https://www.googleapis.com/auth/analytics.readonly']
 DISCOVERY_URI = ('https://analyticsreporting.googleapis.com/$discovery/rest')
 KEY_FILE_LOCATION = 'client_secrets.p12'
-SERVICE_ACCOUNT_EMAIL = 'teste-491@peerless-text-99420.iam.gserviceaccount.com'
-VIEW_ID = '3220009'
+SERVICE_ACCOUNT_EMAIL = ''
+VIEW_ID = ''
 
 def initialize_analyticsreporting():
   """Initializes an analyticsreporting service object.
@@ -39,7 +40,7 @@ def get_report(analytics):
       body={
   "reportRequests": [
     {
-      "viewId": "3220009",
+      "viewId": "XXXX",
       "dateRanges": [
         {
           "startDate": "30daysAgo",
@@ -105,11 +106,20 @@ def print_response(response):
         for metricHeader, value in zip(metricHeaders, values.get('values')):
           print (metricHeader.get('name') + ': ' + value)
 
+def to_json(response):
+  """ Function that saves response into json file
+  Input: 
+      response
+  """
+  write_json = open('response.json', 'w')
+  json.dump(response, write_json, indent = 4)
+  write_json.close()
+
 def main():
   analytics = initialize_analyticsreporting()
   response = get_report(analytics)
-  print_response(response)
-  print(type(response))
+  #print_response(response)
+  to_json(response)
 
 if __name__ == '__main__':
   main()

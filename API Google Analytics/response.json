@@ -1,0 +1,1042 @@
+{
+    "reports": [
+        {
+            "columnHeader": {
+                "metricHeader": {
+                    "metricHeaderEntries": [
+                        {
+                            "name": "ga:newUsers",
+                            "type": "INTEGER"
+                        },
+                        {
+                            "name": "ga:sessions",
+                            "type": "INTEGER"
+                        },
+                        {
+                            "name": "ga:adClicks",
+                            "type": "INTEGER"
+                        },
+                        {
+                            "name": "ga:adCost",
+                            "type": "CURRENCY"
+                        },
+                        {
+                            "name": "ga:CPM",
+                            "type": "CURRENCY"
+                        },
+                        {
+                            "name": "ga:adClicks",
+                            "type": "INTEGER"
+                        },
+                        {
+                            "name": "ga:ROAS",
+                            "type": "PERCENT"
+                        },
+                        {
+                            "name": "ga:pageValue",
+                            "type": "CURRENCY"
+                        },
+                        {
+                            "name": "ga:pageviews",
+                            "type": "INTEGER"
+                        }
+                    ]
+                },
+                "dimensions": [
+                    "ga:campaign"
+                ]
+            },
+            "data": {
+                "rows": [
+                    {
+                        "metrics": [
+                            {
+                                "values": [
+                                    "3837",
+                                    "5280",
+                                    "0",
+                                    "0.0",
+                                    "0.0",
+                                    "0",
+                                    "0.0",
+                                    "0.0",
+                                    "13661"
+                                ]
+                            }
+                        ],
+                        "dimensions": [
+                            "(not set)"
+                        ]
+                    },
+                    {
+                        "metrics": [
+                            {
+                                "values": [
+                                    "10",
+                                    "12",
+                                    "15",
+                                    "4.93",
+                                    "5.284030010718114",
+                                    "15",
+                                    "0.0",
+                                    "0.0",
+                                    "20"
+                                ]
+                            }
+                        ],
+                        "dimensions": [
+                            "2016 - Blog"
+                        ]
+                    },
+                    {
+                        "metrics": [
+                            {
+                                "values": [
+                                    "91",
+                                    "121",
+                                    "115",
+                                    "129.07",
+                                    "32.527721774193544",
+                                    "115",
+                                    "0.0",
+                                    "0.0",
+                                    "238"
+                                ]
+                            }
+                        ],
+                        "dimensions": [
+                            "2016 - Consultoria Cetax"
+                        ]
+                    },
+                    {
+                        "metrics": [
+                            {
+                                "values": [
+                                    "641",
+                                    "904",
+                                    "908",
+                                    "767.91",
+                                    "46.68145896656535",
+                                    "908",
+                                    "0.0",
+                                    "0.0",
+                                    "2010"
+                                ]
+                            }
+                        ],
+                        "dimensions": [
+                            "2016 - Cursos Business Intelligence"
+                        ]
+                    },
+                    {
+                        "metrics": [
+                            {
+                                "values": [
+                                    "381",
+                                    "503",
+                                    "528",
+                                    "542.47",
+                                    "49.57232934295897",
+                                    "528",
+                                    "0.0",
+                                    "0.0",
+                                    "1075"
+                                ]
+                            }
+                        ],
+                        "dimensions": [
+                            "2016 - Cursos Data Warehouse"
+                        ]
+                    },
+                    {
+                        "metrics": [
+                            {
+                                "values": [
+                                    "597",
+                                    "804",
+                                    "794",
+                                    "810.83",
+                                    "47.67905445137011",
+                                    "794",
+                                    "0.0",
+                                    "0.0",
+                                    "1424"
+                                ]
+                            }
+                        ],
+                        "dimensions": [
+                            "2016 - Cursos de Big Data"
+                        ]
+                    },
+                    {
+                        "metrics": [
+                            {
+                                "values": [
+                                    "17",
+                                    "27",
+                                    "20",
+                                    "12.65",
+                                    "17.352537722908096",
+                                    "20",
+                                    "0.0",
+                                    "0.0",
+                                    "44"
+                                ]
+                            }
+                        ],
+                        "dimensions": [
+                            "2016 - Cursos Intermediarios"
+                        ]
+                    },
+                    {
+                        "metrics": [
+                            {
+                                "values": [
+                                    "25",
+                                    "39",
+                                    "37",
+                                    "16.5",
+                                    "24.737631184407793",
+                                    "37",
+                                    "0.0",
+                                    "0.0",
+                                    "73"
+                                ]
+                            }
+                        ],
+                        "dimensions": [
+                            "2016 - Cursos Oracle"
+                        ]
+                    },
+                    {
+                        "metrics": [
+                            {
+                                "values": [
+                                    "2809",
+                                    "3280",
+                                    "3416",
+                                    "2241.68",
+                                    "38.46660717962798",
+                                    "3416",
+                                    "0.0",
+                                    "0.0",
+                                    "4774"
+                                ]
+                            }
+                        ],
+                        "dimensions": [
+                            "2016 - Download Material RDS"
+                        ]
+                    },
+                    {
+                        "metrics": [
+                            {
+                                "values": [
+                                    "13",
+                                    "14",
+                                    "16",
+                                    "5.32",
+                                    "27.142857142857142",
+                                    "16",
+                                    "0.0",
+                                    "0.0",
+                                    "16"
+                                ]
+                            }
+                        ],
+                        "dimensions": [
+                            "2016 - HortonWorks"
+                        ]
+                    },
+                    {
+                        "metrics": [
+                            {
+                                "values": [
+                                    "0",
+                                    "32",
+                                    "0",
+                                    "0.0",
+                                    "0.0",
+                                    "0",
+                                    "0.0",
+                                    "0.0",
+                                    "105"
+                                ]
+                            }
+                        ],
+                        "dimensions": [
+                            "2016 - Institucional Cetax"
+                        ]
+                    },
+                    {
+                        "metrics": [
+                            {
+                                "values": [
+                                    "29",
+                                    "40",
+                                    "49",
+                                    "26.27",
+                                    "39.68277945619335",
+                                    "49",
+                                    "0.0",
+                                    "0.0",
+                                    "61"
+                                ]
+                            }
+                        ],
+                        "dimensions": [
+                            "2016 - Tibco SpotFire"
+                        ]
+                    },
+                    {
+                        "metrics": [
+                            {
+                                "values": [
+                                    "14",
+                                    "53",
+                                    "0",
+                                    "0.0",
+                                    "0.0",
+                                    "0",
+                                    "0.0",
+                                    "0.0",
+                                    "116"
+                                ]
+                            }
+                        ],
+                        "dimensions": [
+                            "abertura_de_vagas_-_formacao_microsoft"
+                        ]
+                    },
+                    {
+                        "metrics": [
+                            {
+                                "values": [
+                                    "1",
+                                    "2",
+                                    "0",
+                                    "0.0",
+                                    "0.0",
+                                    "0",
+                                    "0.0",
+                                    "0.0",
+                                    "8"
+                                ]
+                            }
+                        ],
+                        "dimensions": [
+                            "agenda_cursos_de_agosto_2017"
+                        ]
+                    },
+                    {
+                        "metrics": [
+                            {
+                                "values": [
+                                    "2",
+                                    "25",
+                                    "0",
+                                    "0.0",
+                                    "0.0",
+                                    "0",
+                                    "0.0",
+                                    "0.0",
+                                    "67"
+                                ]
+                            }
+                        ],
+                        "dimensions": [
+                            "agenda_cursos_de_setembro_2017"
+                        ]
+                    },
+                    {
+                        "metrics": [
+                            {
+                                "values": [
+                                    "0",
+                                    "2",
+                                    "0",
+                                    "0.0",
+                                    "0.0",
+                                    "0",
+                                    "0.0",
+                                    "0.0",
+                                    "5"
+                                ]
+                            }
+                        ],
+                        "dimensions": [
+                            "agenda_de_cursos_-_cetax"
+                        ]
+                    },
+                    {
+                        "metrics": [
+                            {
+                                "values": [
+                                    "0",
+                                    "3",
+                                    "0",
+                                    "0.0",
+                                    "0.0",
+                                    "0",
+                                    "0.0",
+                                    "0.0",
+                                    "28"
+                                ]
+                            }
+                        ],
+                        "dimensions": [
+                            "artigo_5_motivos_para_usar_hadoop"
+                        ]
+                    },
+                    {
+                        "metrics": [
+                            {
+                                "values": [
+                                    "1",
+                                    "9",
+                                    "0",
+                                    "0.0",
+                                    "0.0",
+                                    "0",
+                                    "0.0",
+                                    "0.0",
+                                    "18"
+                                ]
+                            }
+                        ],
+                        "dimensions": [
+                            "artigo_big_data"
+                        ]
+                    },
+                    {
+                        "metrics": [
+                            {
+                                "values": [
+                                    "0",
+                                    "5",
+                                    "0",
+                                    "0.0",
+                                    "0.0",
+                                    "0",
+                                    "0.0",
+                                    "0.0",
+                                    "12"
+                                ]
+                            }
+                        ],
+                        "dimensions": [
+                            "artigo_power_bi"
+                        ]
+                    },
+                    {
+                        "metrics": [
+                            {
+                                "values": [
+                                    "0",
+                                    "4",
+                                    "0",
+                                    "0.0",
+                                    "0.0",
+                                    "0",
+                                    "0.0",
+                                    "0.0",
+                                    "7"
+                                ]
+                            }
+                        ],
+                        "dimensions": [
+                            "aulagratis-formms"
+                        ]
+                    },
+                    {
+                        "metrics": [
+                            {
+                                "values": [
+                                    "6",
+                                    "6",
+                                    "0",
+                                    "0.0",
+                                    "0.0",
+                                    "0",
+                                    "0.0",
+                                    "0.0",
+                                    "6"
+                                ]
+                            }
+                        ],
+                        "dimensions": [
+                            "automacao_-_cursos_de_bi"
+                        ]
+                    },
+                    {
+                        "metrics": [
+                            {
+                                "values": [
+                                    "0",
+                                    "1",
+                                    "0",
+                                    "0.0",
+                                    "0.0",
+                                    "0",
+                                    "0.0",
+                                    "0.0",
+                                    "1"
+                                ]
+                            }
+                        ],
+                        "dimensions": [
+                            "calendario_de_julho_-_duplicado"
+                        ]
+                    },
+                    {
+                        "metrics": [
+                            {
+                                "values": [
+                                    "1",
+                                    "4",
+                                    "0",
+                                    "0.0",
+                                    "0.0",
+                                    "0",
+                                    "0.0",
+                                    "0.0",
+                                    "12"
+                                ]
+                            }
+                        ],
+                        "dimensions": [
+                            "campanha_microstrategy_julho_2017"
+                        ]
+                    },
+                    {
+                        "metrics": [
+                            {
+                                "values": [
+                                    "2",
+                                    "6",
+                                    "0",
+                                    "0.0",
+                                    "0.0",
+                                    "0",
+                                    "0.0",
+                                    "0.0",
+                                    "16"
+                                ]
+                            }
+                        ],
+                        "dimensions": [
+                            "curso_de_bi_analistas_e_gestores"
+                        ]
+                    },
+                    {
+                        "metrics": [
+                            {
+                                "values": [
+                                    "0",
+                                    "1",
+                                    "0",
+                                    "0.0",
+                                    "0.0",
+                                    "0",
+                                    "0.0",
+                                    "0.0",
+                                    "1"
+                                ]
+                            }
+                        ],
+                        "dimensions": [
+                            "curso_de_hadoop_essentials"
+                        ]
+                    },
+                    {
+                        "metrics": [
+                            {
+                                "values": [
+                                    "3",
+                                    "7",
+                                    "0",
+                                    "0.0",
+                                    "0.0",
+                                    "0",
+                                    "0.0",
+                                    "0.0",
+                                    "12"
+                                ]
+                            }
+                        ],
+                        "dimensions": [
+                            "curso_de_introducao_ao_data_warehouse"
+                        ]
+                    },
+                    {
+                        "metrics": [
+                            {
+                                "values": [
+                                    "0",
+                                    "1",
+                                    "0",
+                                    "0.0",
+                                    "0.0",
+                                    "0",
+                                    "0.0",
+                                    "0.0",
+                                    "4"
+                                ]
+                            }
+                        ],
+                        "dimensions": [
+                            "curso_e_apostila_de_etl"
+                        ]
+                    },
+                    {
+                        "metrics": [
+                            {
+                                "values": [
+                                    "135",
+                                    "277",
+                                    "0",
+                                    "0.0",
+                                    "0.0",
+                                    "0",
+                                    "0.0",
+                                    "0.0",
+                                    "582"
+                                ]
+                            }
+                        ],
+                        "dimensions": [
+                            "curso_estudante_paga_meia_-_proximos_cursos"
+                        ]
+                    },
+                    {
+                        "metrics": [
+                            {
+                                "values": [
+                                    "62",
+                                    "118",
+                                    "0",
+                                    "0.0",
+                                    "0.0",
+                                    "0",
+                                    "0.0",
+                                    "0.0",
+                                    "204"
+                                ]
+                            }
+                        ],
+                        "dimensions": [
+                            "curso_hdp_administration_i_-_rio_de_janeiro_segmentado"
+                        ]
+                    },
+                    {
+                        "metrics": [
+                            {
+                                "values": [
+                                    "6",
+                                    "9",
+                                    "0",
+                                    "0.0",
+                                    "0.0",
+                                    "0",
+                                    "0.0",
+                                    "0.0",
+                                    "11"
+                                ]
+                            }
+                        ],
+                        "dimensions": [
+                            "curso_machine_learning_segmentado_feriado"
+                        ]
+                    },
+                    {
+                        "metrics": [
+                            {
+                                "values": [
+                                    "2",
+                                    "70",
+                                    "0",
+                                    "0.0",
+                                    "0.0",
+                                    "0",
+                                    "0.0",
+                                    "0.0",
+                                    "165"
+                                ]
+                            }
+                        ],
+                        "dimensions": [
+                            "curso_machine_learning_setembro_2017"
+                        ]
+                    },
+                    {
+                        "metrics": [
+                            {
+                                "values": [
+                                    "0",
+                                    "6",
+                                    "0",
+                                    "0.0",
+                                    "0.0",
+                                    "0",
+                                    "0.0",
+                                    "0.0",
+                                    "17"
+                                ]
+                            }
+                        ],
+                        "dimensions": [
+                            "curso_machine_learning_setembro_2017_-_duplicado"
+                        ]
+                    },
+                    {
+                        "metrics": [
+                            {
+                                "values": [
+                                    "16",
+                                    "48",
+                                    "0",
+                                    "0.0",
+                                    "0.0",
+                                    "0",
+                                    "0.0",
+                                    "0.0",
+                                    "110"
+                                ]
+                            }
+                        ],
+                        "dimensions": [
+                            "curso_microstrategy_setembro_2017_-_novas_turmas"
+                        ]
+                    },
+                    {
+                        "metrics": [
+                            {
+                                "values": [
+                                    "2",
+                                    "9",
+                                    "0",
+                                    "0.0",
+                                    "0.0",
+                                    "0",
+                                    "0.0",
+                                    "0.0",
+                                    "26"
+                                ]
+                            }
+                        ],
+                        "dimensions": [
+                            "curso_microstrategy_setembro_2017_-_versao_curta"
+                        ]
+                    },
+                    {
+                        "metrics": [
+                            {
+                                "values": [
+                                    "0",
+                                    "1",
+                                    "0",
+                                    "0.0",
+                                    "0.0",
+                                    "0",
+                                    "0.0",
+                                    "0.0",
+                                    "2"
+                                ]
+                            }
+                        ],
+                        "dimensions": [
+                            "cursos"
+                        ]
+                    },
+                    {
+                        "metrics": [
+                            {
+                                "values": [
+                                    "0",
+                                    "1",
+                                    "0",
+                                    "0.0",
+                                    "0.0",
+                                    "0",
+                                    "0.0",
+                                    "0.0",
+                                    "5"
+                                ]
+                            }
+                        ],
+                        "dimensions": [
+                            "cursos_de_etl_obiee_microstrategy_hadoop_pig_and_hive"
+                        ]
+                    },
+                    {
+                        "metrics": [
+                            {
+                                "values": [
+                                    "3",
+                                    "9",
+                                    "0",
+                                    "0.0",
+                                    "0.0",
+                                    "0",
+                                    "0.0",
+                                    "0.0",
+                                    "28"
+                                ]
+                            }
+                        ],
+                        "dimensions": [
+                            "cursos_de_julho_2017"
+                        ]
+                    },
+                    {
+                        "metrics": [
+                            {
+                                "values": [
+                                    "0",
+                                    "3",
+                                    "0",
+                                    "0.0",
+                                    "0.0",
+                                    "0",
+                                    "0.0",
+                                    "0.0",
+                                    "7"
+                                ]
+                            }
+                        ],
+                        "dimensions": [
+                            "cursos_oracle_-_odi_and_obiee"
+                        ]
+                    },
+                    {
+                        "metrics": [
+                            {
+                                "values": [
+                                    "0",
+                                    "2",
+                                    "0",
+                                    "0.0",
+                                    "0.0",
+                                    "0",
+                                    "0.0",
+                                    "0.0",
+                                    "7"
+                                ]
+                            }
+                        ],
+                        "dimensions": [
+                            "essa_e_a_sua_change_power_bi_e_analista_bi_ms_-_062017"
+                        ]
+                    },
+                    {
+                        "metrics": [
+                            {
+                                "values": [
+                                    "0",
+                                    "1",
+                                    "0",
+                                    "0.0",
+                                    "0.0",
+                                    "0",
+                                    "0.0",
+                                    "0.0",
+                                    "2"
+                                ]
+                            }
+                        ],
+                        "dimensions": [
+                            "ganhe_10_de_desconto_na_sua_inscricao"
+                        ]
+                    },
+                    {
+                        "metrics": [
+                            {
+                                "values": [
+                                    "0",
+                                    "1",
+                                    "0",
+                                    "0.0",
+                                    "0.0",
+                                    "0",
+                                    "0.0",
+                                    "0.0",
+                                    "2"
+                                ]
+                            }
+                        ],
+                        "dimensions": [
+                            "hadoop_essentials_online_-_dia_23-02"
+                        ]
+                    },
+                    {
+                        "metrics": [
+                            {
+                                "values": [
+                                    "17",
+                                    "55",
+                                    "0",
+                                    "0.0",
+                                    "0.0",
+                                    "0",
+                                    "0.0",
+                                    "0.0",
+                                    "231"
+                                ]
+                            }
+                        ],
+                        "dimensions": [
+                            "materiais_para_download_-_form_contato"
+                        ]
+                    },
+                    {
+                        "metrics": [
+                            {
+                                "values": [
+                                    "1",
+                                    "1",
+                                    "0",
+                                    "0.0",
+                                    "0.0",
+                                    "0",
+                                    "0.0",
+                                    "0.0",
+                                    "1"
+                                ]
+                            }
+                        ],
+                        "dimensions": [
+                            "novo_material_-_hadoop"
+                        ]
+                    },
+                    {
+                        "metrics": [
+                            {
+                                "values": [
+                                    "0",
+                                    "1",
+                                    "0",
+                                    "0.0",
+                                    "0.0",
+                                    "0",
+                                    "0.0",
+                                    "0.0",
+                                    "6"
+                                ]
+                            }
+                        ],
+                        "dimensions": [
+                            "reenvio_-_divulgacao_-_materiais_e_cursos_-_duplicado"
+                        ]
+                    },
+                    {
+                        "metrics": [
+                            {
+                                "values": [
+                                    "2",
+                                    "10",
+                                    "0",
+                                    "0.0",
+                                    "0.0",
+                                    "0",
+                                    "0.0",
+                                    "0.0",
+                                    "17"
+                                ]
+                            }
+                        ],
+                        "dimensions": [
+                            "text-powerbi"
+                        ]
+                    },
+                    {
+                        "metrics": [
+                            {
+                                "values": [
+                                    "116",
+                                    "210",
+                                    "211",
+                                    "84.35",
+                                    "65.59097978227061",
+                                    "211",
+                                    "0.0",
+                                    "0.0",
+                                    "623"
+                                ]
+                            }
+                        ],
+                        "dimensions": [
+                            "TS - 2016 - Institucional Cetax"
+                        ]
+                    },
+                    {
+                        "metrics": [
+                            {
+                                "values": [
+                                    "2",
+                                    "4",
+                                    "0",
+                                    "0.0",
+                                    "0.0",
+                                    "0",
+                                    "0.0",
+                                    "0.0",
+                                    "64"
+                                ]
+                            }
+                        ],
+                        "dimensions": [
+                            "vagas_-_compleo_-_sas_spark_bi_-_duplicado"
+                        ]
+                    }
+                ],
+                "isDataGolden": true,
+                "rowCount": 47,
+                "minimums": [
+                    {
+                        "values": [
+                            "0",
+                            "0",
+                            "0",
+                            "0.0",
+                            "0.0",
+                            "0",
+                            "0.0",
+                            "0.0",
+                            "0"
+                        ]
+                    }
+                ],
+                "maximums": [
+                    {
+                        "values": [
+                            "3837",
+                            "5280",
+                            "3416",
+                            "2241.68",
+                            "65.59097978227061",
+                            "3416",
+                            "0.0",
+                            "0.0",
+                            "13661"
+                        ]
+                    }
+                ],
+                "totals": [
+                    {
+                        "values": [
+                            "8844",
+                            "12021",
+                            "6109",
+                            "4641.98",
+                            "41.769591390496075",
+                            "6109",
+                            "0.0",
+                            "0.0",
+                            "25924"
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}
