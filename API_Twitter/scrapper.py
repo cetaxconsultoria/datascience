@@ -3,6 +3,36 @@
 import tweepy
 import json
 
+def tweets_to_json(iterator, file_name):
+    """
+    Function used in order to save the requested iterator as json format. Usually used to
+    save tweets and all its features.
+
+    Parameters:
+    -----------
+    iterator (obj):
+        some iterator like items, list, etc, to be saved as json.
+    file_name (str):
+        this will be the name of the file that will be saved
+
+    Returns:
+    -------
+    true (bool):
+        this function returns True if everything went fine
+    exception (obj):
+        raises an exception if something went wrong
+    """
+    try:
+        write_json = open('tweets.json', 'w')
+        for tweet in iterator:
+            json.dump(tweet._json,write_json,indent = 4)
+    
+        write_json.close()
+    except:
+        raise
+
+    return True
+
 def get_api():
     """
     This function is used to construct a api object based on tokens and keys
@@ -25,9 +55,12 @@ def get_api():
                     'access_token_secret':''}
 
     #authorization operations
-    auth = tweepy.OAuthHandler(access_keys['consumer_key'], access_keys['consumer_secret'])
-    auth.set_access_token(access_keys['access_token'],access_keys['access_token_secret'])
-    return tweepy.API(auth)
+    try:
+        auth = tweepy.OAuthHandler(access_keys['consumer_key'], access_keys['consumer_secret'])
+        auth.set_access_token(access_keys['access_token'],access_keys['access_token_secret'])
+        return tweepy.API(auth)
+    except:
+        raise
 
 def get_timeline(screen_name, count):
     """
@@ -48,15 +81,13 @@ def get_timeline(screen_name, count):
     api = get_api()
     
     #get the 'count' most recent tweets from screen_name
-    new_tweets = api.user_timeline(screen_name = screen_name,count=count)
-    
+    try:
+        new_tweets = api.user_timeline(screen_name = screen_name,count=count)
+    except:
+        raise
     #writing information as json
-    write_json = open('tweets.json', 'w')
-    for tweet in new_tweets:
-        json.dump(tweet._json,write_json,indent = 4)
+    tweets_to_json(new_tweets,'timeline_tweets.json')
     
-    write_json.close()
-
 def get_search(search_key, count):
     """
     Funtion to get tweets from a search of a key word
@@ -74,14 +105,12 @@ def get_search(search_key, count):
         Nothing is returned. Just a json file is saved with tweets
     """
     api = get_api()
-    tweets = tweepy.Cursor(api.search, q=search_key).items(count)
+    try:
+        tweets = tweepy.Cursor(api.search, q=search_key).items(count)
+    except:
+        raise
 
-    write_json = open('tweets.json', 'w')
-    for tweet in tweets:
-        json.dump(tweet._json,write_json,indent = 4)
-    
-    write_json.close()
-
+    tweets_to_json(tweets,'searh_tweets.json')
 
 if __name__ == '__main__':
     #get_timeline('@realDonaldTrump', 200)
