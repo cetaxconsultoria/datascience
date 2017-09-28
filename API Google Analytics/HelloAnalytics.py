@@ -35,7 +35,13 @@ def initialize_analyticsreporting():
   return analytics
 
 def get_report(analytics):
-  # Use the Analytics Service Object to query the Analytics Reporting API V4.
+  """ Use the Analytics Service Object to query the Analytics Reporting API V4.
+
+  Inputs:
+  	The analytics object contructed.
+  Returns:
+  	The dictionary with all the responses to the request
+  """
 	return analytics.reports().batchGet(
       body={
   "reportRequests": [
@@ -86,7 +92,12 @@ def get_report(analytics):
 }).execute()
 
 def print_response(response):
-  """Parses and prints the Analytics Reporting API V4 response"""
+  """Parses and prints the Analytics Reporting API V4 response
+  Inputs:
+  	the response from the APIs request
+  Returns:
+  	None
+  """
 
   for report in response.get('reports', []):
     columnHeader = report.get('columnHeader', {})
