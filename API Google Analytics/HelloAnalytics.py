@@ -35,61 +35,60 @@ def initialize_analyticsreporting():
   return analytics
 
 def get_report(analytics):
-  """ Use the Analytics Service Object to query the Analytics Reporting API V4.
+    """ Use the Analytics Service Object to query the Analytics Reporting API V4.
 
-  Inputs:
-  	The analytics object contructed.
-  Returns:
-  	The dictionary with all the responses to the request
-  """
-	return analytics.reports().batchGet(
-      body={
-  "reportRequests": [
+    Inputs:
+    	The analytics object contructed.
+    Returns:
+    	The dictionary with all the responses to the request
+    """
+    return analytics.reports().batchGet(
+    body={
+    "reportRequests": [
     {
-      "viewId": "XXXX",
-      "dateRanges": [
-        {
-          "startDate": "30daysAgo",
-          "endDate": "yesterday"
-        }
-      ],
-      "metrics": [
-        {
-          "expression": "ga:newUsers"
-        },
-        {
-          "expression": "ga:sessions"
-        },
-        {
-          "expression": "ga:adClicks"
-        },
-        {
-          "expression": "ga:adCost"
-        },
-        {
-          "expression": "ga:CPM"
-        },
-        {
-          "expression": "ga:adClicks"
-        },
-        {
-          "expression": "ga:ROAS"
-        },
-        {
-          "expression": "ga:pageValue"
-        },
-        {
-          "expression": "ga:pageviews"
-        }
-      ],
-      "dimensions": [
-        {
-          "name": "ga:campaign"
-     	}
-      ]
+    "viewId": "XXXX",
+    "dateRanges": [
+    {
+    "startDate": "30daysAgo",
+    "endDate": "yesterday"
     }
-  ]
-}).execute()
+    ],
+    "metrics": [
+    {
+    "expression": "ga:newUsers"
+    },
+    {
+    "expression": "ga:sessions"
+    },
+    {
+    "expression": "ga:adClicks"
+    },
+    {
+    "expression": "ga:adCost"
+    },
+    {
+    "expression": "ga:CPM"
+    },
+    {
+    "expression": "ga:adClicks"
+    },
+    {
+    "expression": "ga:ROAS"
+    },
+    {
+    "expression": "ga:pageValue"
+    },
+    {
+    "expression": "ga:pageviews"
+    }
+    ],
+    "dimensions": [
+    {
+    "name": "ga:campaign"
+    }
+    ]
+    }
+    ]}).execute()
 
 def print_response(response):
   """Parses and prints the Analytics Reporting API V4 response
@@ -129,7 +128,7 @@ def to_json(response):
 def main():
   analytics = initialize_analyticsreporting()
   response = get_report(analytics)
-  #print_response(response)
+  print_response(response)
   to_json(response)
 
 if __name__ == '__main__':
