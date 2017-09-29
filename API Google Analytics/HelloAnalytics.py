@@ -128,7 +128,7 @@ def to_json(response):
 def main():
   analytics = initialize_analyticsreporting()
   response = get_report(analytics)
-  print_response(response)
+ # print_response(response)
   to_json(response)
 
 if __name__ == '__main__':
