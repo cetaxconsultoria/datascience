@@ -2,99 +2,87 @@
 
 import argparse
 import json
-
 from apiclient.discovery import build
 from oauth2client.service_account import ServiceAccountCredentials
-
 import httplib2
 from oauth2client import client
 from oauth2client import file
 from oauth2client import tools
 
-SCOPES = ['https://www.googleapis.com/auth/analytics.readonly']
-DISCOVERY_URI = ('https://analyticsreporting.googleapis.com/$discovery/rest')
-KEY_FILE_LOCATION = 'client_secrets.p12'
-SERVICE_ACCOUNT_EMAIL = ''
-VIEW_ID = ''
-
 def initialize_analyticsreporting():
   """Initializes an analyticsreporting service object.
+  
+  Parameters:
+  -----------
+    None.
+      It only needs the variables listed below in order to authenticate
 
   Returns:
-    analytics an authorized analyticsreporting service object.
+  --------
+    analytics:
+      analytics an authorized analyticsreporting service object.
   """
 
-  credentials = ServiceAccountCredentials.from_p12_keyfile(
-    SERVICE_ACCOUNT_EMAIL, KEY_FILE_LOCATION, scopes=SCOPES)
+  #Initializing the authentication process
+  SCOPES = 'https://www.googleapis.com/auth/analytics.readonly'
+  DISCOVERY_URI = 'https://analyticsreporting.googleapis.com/$discovery/rest'
+  KEY_FILE_LOCATION = 'client_secrets.p12'
+  SERVICE_ACCOUNT_EMAIL = ''
+  VIEW_ID = ''
 
-  http = credentials.authorize(httplib2.Http())
+  try:
+    credentials = ServiceAccountCredentials.from_p12_keyfile(SERVICE_ACCOUNT_EMAIL, KEY_FILE_LOCATION, scopes=SCOPES)
 
-  # Build the service object.
-  analytics = build('analytics', 'v4', http=http, discoveryServiceUrl=DISCOVERY_URI)
+    http = credentials.authorize(httplib2.Http())
 
-  return analytics
+    # Build the service object.
+    analytics = build('analytics', 'v4', http=http, discoveryServiceUrl=DISCOVERY_URI)
+    return analytics
+  except:
+    raise
 
 def get_report(analytics):
     """ Use the Analytics Service Object to query the Analytics Reporting API V4.
-
-    Inputs:
+    
+    Parameters:
+    -----------
+    analytics(obj):
     	The analytics object contructed.
+
     Returns:
+    --------
     	The dictionary with all the responses to the request
     """
-    return analytics.reports().batchGet(
-    body={
-    "reportRequests": [
-    {
-    "viewId": "XXXX",
-    "dateRanges": [
-    {
-    "startDate": "30daysAgo",
-    "endDate": "yesterday"
-    }
-    ],
-    "metrics": [
-    {
-    "expression": "ga:newUsers"
-    },
-    {
-    "expression": "ga:sessions"
-    },
-    {
-    "expression": "ga:adClicks"
-    },
-    {
-    "expression": "ga:adCost"
-    },
-    {
-    "expression": "ga:CPM"
-    },
-    {
-    "expression": "ga:adClicks"
-    },
-    {
-    "expression": "ga:ROAS"
-    },
-    {
-    "expression": "ga:pageValue"
-    },
-    {
-    "expression": "ga:pageviews"
-    }
-    ],
-    "dimensions": [
-    {
-    "name": "ga:campaign"
-    }
-    ]
-    }
-    ]}).execute()
+    query = {"reportRequests": 
+              [{"viewId": "XXX", "dateRanges":[{"startDate": "30daysAgo","endDate": "yesterday"}],
+              "metrics": [{"expression": "ga:newUsers"}, 
+                          {"expression": "ga:sessions"},
+                          {"expression": "ga:adClicks"},
+                          {"expression": "ga:adCost"},
+                          {"expression": "ga:CPM"},
+                          {"expression": "ga:adClicks"},
+                          {"expression": "ga:ROAS"},
+                          {"expression": "ga:pageValue"},
+                          {"expression": "ga:pageviews"}],
+              "dimensions": [{"name": "ga:campaign"}]
+              }]
+            }
+
+    try:
+      return analytics.reports().batchGet(body = query).execute()
+    except:
+      raise
 
 def print_response(response):
   """Parses and prints the Analytics Reporting API V4 response
-  Inputs:
+
+  Parameters:
+  -----------
+  response(dict)
   	the response from the APIs request
+
   Returns:
+  --------
   	None
   """
 
@@ -116,20 +104,35 @@ def print_response(response):
         for metricHeader, value in zip(metricHeaders, values.get('values')):
           print (metricHeader.get('name') + ': ' + value)
 
-def to_json(response):
+def to_json(response, filename):
   """ Function that saves response into json file
-  Input: 
-      response
+  
+  Parameters:
+  ----------- 
+  response(dict):
+    the response to the request
+  filename(string):
+    filename to save the response on
+
+  Returns:
+  --------
+    exception in case there is some error along the code
   """
-  write_json = open('response.json', 'w')
-  json.dump(response, write_json, indent = 4)
-  write_json.close()
+  try:
+    write_json = open('{}.json'.format(filename), 'w')
+    json.dump(response, write_json, indent = 4)
+    write_json.close()
+  except:
+    raise
 
 def main():
+  """ Function the calls the authentication, get the response of the analytics report, and saves into a json file
+  """
+
   analytics = initialize_analyticsreporting()
   response = get_report(analytics)
- # print_response(response)
-  to_json(response)
+  #print_response(response)
+  to_json(response, 'filename')
 
 if __name__ == '__main__':
   main()
