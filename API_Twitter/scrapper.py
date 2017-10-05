@@ -49,10 +49,10 @@ def get_api():
     """
 
     #put your information here
-    access_keys = {'consumer_key':'zjv8UWDY1T4czSg8BwLapZFix',
-                 'consumer_secret':'a7stKtlP53R2Z4AoOsCsEtozCh3T1EyUNnmBvAww10kh0hzShH',
-                 'access_token':'129634628-9wRTqDFRsgUAGdNkSwIHprRUo6EuEmSHE3fQibYx',
-                 'access_token_secret':'8buBHopCDwuMBKlu3z97OFdM5ywNnJyk0mV86D1CCl7vk'}
+    access_keys = {'consumer_key':'',
+                 'consumer_secret':'',
+                 'access_token':'',
+                 'access_token_secret':''}
 
     #authorization operations
     try:
