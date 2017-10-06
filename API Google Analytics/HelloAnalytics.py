@@ -61,8 +61,7 @@ def get_report(analytics):
                           {"expression": "ga:adClicks"},
                           {"expression": "ga:adCost"},
                           {"expression": "ga:CPM"},
-                          {"expression": "ga:CPC"},
-                          {"expression": "ga:pageValue"},
+                          {"expression": "ga:CPC"},,
                           {"expression": "ga:pageviews"}],
               "dimensions": [{"name": "ga:campaign"}]
               }]
