@@ -1,0 +1,105 @@
+{
+    "created_at": "Fri Oct 06 19:15:13 +0000 2017",
+    "id": 916381348818022400,
+    "id_str": "916381348818022400",
+    "text": "The man responsible for the Las Vegas shooting scouted other festivals prior to last Sunday's horrific events\n\nhttps://t.co/tOzJcBBZ0D",
+    "truncated": false,
+    "entities": {
+        "hashtags": [],
+        "symbols": [],
+        "user_mentions": [],
+        "urls": [
+            {
+                "url": "https://t.co/tOzJcBBZ0D",
+                "expanded_url": "http://bit.ly/2krMc52",
+                "display_url": "bit.ly/2krMc52",
+                "indices": [
+                    111,
+                    134
+                ]
+            }
+        ]
+    },
+    "metadata": {
+        "iso_language_code": "en",
+        "result_type": "recent"
+    },
+    "source": "<a href=\"http://bufferapp.com\" rel=\"nofollow\">Buffer</a>",
+    "in_reply_to_status_id": null,
+    "in_reply_to_status_id_str": null,
+    "in_reply_to_user_id": null,
+    "in_reply_to_user_id_str": null,
+    "in_reply_to_screen_name": null,
+    "user": {
+        "id": 361312031,
+        "id_str": "361312031",
+        "name": "MASS APPEAL",
+        "screen_name": "MassAppeal",
+        "location": "New York, NY",
+        "description": "Follow the label @MassAppealRecs",
+        "url": "https://t.co/5xLvowSPdR",
+        "entities": {
+            "url": {
+                "urls": [
+                    {
+                        "url": "https://t.co/5xLvowSPdR",
+                        "expanded_url": "https://massappeal.com/",
+                        "display_url": "massappeal.com",
+                        "indices": [
+                            0,
+                            23
+                        ]
+                    }
+                ]
+            },
+            "description": {
+                "urls": []
+            }
+        },
+        "protected": false,
+        "followers_count": 58078,
+        "friends_count": 1641,
+        "listed_count": 676,
+        "created_at": "Wed Aug 24 15:57:45 +0000 2011",
+        "favourites_count": 14595,
+        "utc_offset": -14400,
+        "time_zone": "Eastern Time (US & Canada)",
+        "geo_enabled": true,
+        "verified": false,
+        "statuses_count": 35895,
+        "lang": "en",
+        "contributors_enabled": false,
+        "is_translator": false,
+        "is_translation_enabled": false,
+        "profile_background_color": "000000",
+        "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/451072969922449410/Q7fD3ie3.jpeg",
+        "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/451072969922449410/Q7fD3ie3.jpeg",
+        "profile_background_tile": true,
+        "profile_image_url": "http://pbs.twimg.com/profile_images/618113171618795520/VSN0piVF_normal.jpg",
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/618113171618795520/VSN0piVF_normal.jpg",
+        "profile_banner_url": "https://pbs.twimg.com/profile_banners/361312031/1496265071",
+        "profile_link_color": "000000",
+        "profile_sidebar_border_color": "000000",
+        "profile_sidebar_fill_color": "F6FFD1",
+        "profile_text_color": "333333",
+        "profile_use_background_image": false,
+        "has_extended_profile": false,
+        "default_profile": false,
+        "default_profile_image": false,
+        "following": false,
+        "follow_request_sent": false,
+        "notifications": false,
+        "translator_type": "regular"
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 0,
+    "favorite_count": 0,
+    "favorited": false,
+    "retweeted": false,
+    "possibly_sensitive": false,
+    "lang": "en"
+}

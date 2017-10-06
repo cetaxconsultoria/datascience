@@ -1,0 +1,104 @@
+{
+    "created_at": "Fri Oct 06 19:13:38 +0000 2017",
+    "id": 916380947611897858,
+    "id_str": "916380947611897858",
+    "text": "Vegas Shooter Got Aggressive with Chicago Hotel Manager Before Lollapalooza   https://t.co/EMGvcVJlY8",
+    "truncated": false,
+    "entities": {
+        "hashtags": [],
+        "symbols": [],
+        "user_mentions": [],
+        "urls": [
+            {
+                "url": "https://t.co/EMGvcVJlY8",
+                "expanded_url": "http://ihe.art/kS0X4ZK",
+                "display_url": "ihe.art/kS0X4ZK",
+                "indices": [
+                    78,
+                    101
+                ]
+            }
+        ]
+    },
+    "metadata": {
+        "iso_language_code": "en",
+        "result_type": "recent"
+    },
+    "source": "<a href=\"http://www.socialflow.com\" rel=\"nofollow\">SocialFlow</a>",
+    "in_reply_to_status_id": null,
+    "in_reply_to_status_id_str": null,
+    "in_reply_to_user_id": null,
+    "in_reply_to_user_id_str": null,
+    "in_reply_to_screen_name": null,
+    "user": {
+        "id": 27099099,
+        "id_str": "27099099",
+        "name": "97.1 ZHT",
+        "screen_name": "971zht",
+        "location": "Salt Lake City, UT",
+        "description": "Salt Lake's #1 Hit Music Station",
+        "url": "https://t.co/QtRyjrnAH8",
+        "entities": {
+            "url": {
+                "urls": [
+                    {
+                        "url": "https://t.co/QtRyjrnAH8",
+                        "expanded_url": "http://www.971zht.com",
+                        "display_url": "971zht.com",
+                        "indices": [
+                            0,
+                            23
+                        ]
+                    }
+                ]
+            },
+            "description": {
+                "urls": []
+            }
+        },
+        "protected": false,
+        "followers_count": 7489,
+        "friends_count": 215,
+        "listed_count": 100,
+        "created_at": "Fri Mar 27 21:15:01 +0000 2009",
+        "favourites_count": 282,
+        "utc_offset": -21600,
+        "time_zone": "Mountain Time (US & Canada)",
+        "geo_enabled": true,
+        "verified": false,
+        "statuses_count": 18498,
+        "lang": "en",
+        "contributors_enabled": false,
+        "is_translator": false,
+        "is_translation_enabled": false,
+        "profile_background_color": "1E2D9C",
+        "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/71915887/twitter-zht.jpg",
+        "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/71915887/twitter-zht.jpg",
+        "profile_background_tile": false,
+        "profile_image_url": "http://pbs.twimg.com/profile_images/676874533379280896/0fm6R1PD_normal.jpg",
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/676874533379280896/0fm6R1PD_normal.jpg",
+        "profile_link_color": "104BB2",
+        "profile_sidebar_border_color": "456AB5",
+        "profile_sidebar_fill_color": "D5D2D2",
+        "profile_text_color": "000000",
+        "profile_use_background_image": false,
+        "has_extended_profile": false,
+        "default_profile": false,
+        "default_profile_image": false,
+        "following": false,
+        "follow_request_sent": false,
+        "notifications": false,
+        "translator_type": "none"
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 0,
+    "favorite_count": 0,
+    "favorited": false,
+    "retweeted": false,
+    "possibly_sensitive": false,
+    "lang": "en"
+}

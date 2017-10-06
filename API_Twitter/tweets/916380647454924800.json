@@ -1,0 +1,104 @@
+{
+    "created_at": "Fri Oct 06 19:12:26 +0000 2017",
+    "id": 916380647454924800,
+    "id_str": "916380647454924800",
+    "text": "He got a room that overlooked the Lollapalooza festival because he was aggressive and demanding with the hotel... https://t.co/9so52jmrnT",
+    "truncated": false,
+    "entities": {
+        "hashtags": [],
+        "symbols": [],
+        "user_mentions": [],
+        "urls": [
+            {
+                "url": "https://t.co/9so52jmrnT",
+                "expanded_url": "http://fb.me/NPKQ6dGX",
+                "display_url": "fb.me/NPKQ6dGX",
+                "indices": [
+                    114,
+                    137
+                ]
+            }
+        ]
+    },
+    "metadata": {
+        "iso_language_code": "en",
+        "result_type": "recent"
+    },
+    "source": "<a href=\"http://www.facebook.com/twitter\" rel=\"nofollow\">Facebook</a>",
+    "in_reply_to_status_id": null,
+    "in_reply_to_status_id_str": null,
+    "in_reply_to_user_id": null,
+    "in_reply_to_user_id_str": null,
+    "in_reply_to_screen_name": null,
+    "user": {
+        "id": 28132759,
+        "id_str": "28132759",
+        "name": "Big I 1079",
+        "screen_name": "BigI1079",
+        "location": "Albuquerque, NM",
+        "description": "Your home for 20 songs in a row...every weekday at 10am and 3pm",
+        "url": "http://t.co/Vos5HwVUY9",
+        "entities": {
+            "url": {
+                "urls": [
+                    {
+                        "url": "http://t.co/Vos5HwVUY9",
+                        "expanded_url": "http://www.bigi1079.com",
+                        "display_url": "bigi1079.com",
+                        "indices": [
+                            0,
+                            22
+                        ]
+                    }
+                ]
+            },
+            "description": {
+                "urls": []
+            }
+        },
+        "protected": false,
+        "followers_count": 1646,
+        "friends_count": 141,
+        "listed_count": 55,
+        "created_at": "Wed Apr 01 16:03:58 +0000 2009",
+        "favourites_count": 14,
+        "utc_offset": -21600,
+        "time_zone": "Mountain Time (US & Canada)",
+        "geo_enabled": false,
+        "verified": false,
+        "statuses_count": 11023,
+        "lang": "en",
+        "contributors_enabled": false,
+        "is_translator": false,
+        "is_translation_enabled": false,
+        "profile_background_color": "022330",
+        "profile_background_image_url": "http://abs.twimg.com/images/themes/theme15/bg.png",
+        "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme15/bg.png",
+        "profile_background_tile": false,
+        "profile_image_url": "http://pbs.twimg.com/profile_images/117484157/Big_I_NM_Country_Logo2_normal.jpg",
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/117484157/Big_I_NM_Country_Logo2_normal.jpg",
+        "profile_link_color": "0084B4",
+        "profile_sidebar_border_color": "A8C7F7",
+        "profile_sidebar_fill_color": "C0DFEC",
+        "profile_text_color": "333333",
+        "profile_use_background_image": true,
+        "has_extended_profile": false,
+        "default_profile": false,
+        "default_profile_image": false,
+        "following": false,
+        "follow_request_sent": false,
+        "notifications": false,
+        "translator_type": "none"
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 0,
+    "favorite_count": 0,
+    "favorited": false,
+    "retweeted": false,
+    "possibly_sensitive": false,
+    "lang": "en"
+}

@@ -1,0 +1,116 @@
+{
+    "created_at": "Fri Oct 06 19:14:59 +0000 2017",
+    "id": 916381289061732353,
+    "id_str": "916381289061732353",
+    "text": "Vegas Shooter Stephen Paddock Got Aggressive with Chicago Hotel Manager Before Lollapalooza https://t.co/93unuO9QpC via @TMZ",
+    "truncated": false,
+    "entities": {
+        "hashtags": [],
+        "symbols": [],
+        "user_mentions": [
+            {
+                "screen_name": "TMZ",
+                "name": "TMZ",
+                "id": 16331010,
+                "id_str": "16331010",
+                "indices": [
+                    120,
+                    124
+                ]
+            }
+        ],
+        "urls": [
+            {
+                "url": "https://t.co/93unuO9QpC",
+                "expanded_url": "http://www.tmz.com/2017/10/06/stephen-paddock-chicago-hotel-lollapalooza-vegas-shooter/",
+                "display_url": "tmz.com/2017/10/06/ste\u2026",
+                "indices": [
+                    92,
+                    115
+                ]
+            }
+        ]
+    },
+    "metadata": {
+        "iso_language_code": "en",
+        "result_type": "recent"
+    },
+    "source": "<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>",
+    "in_reply_to_status_id": null,
+    "in_reply_to_status_id_str": null,
+    "in_reply_to_user_id": null,
+    "in_reply_to_user_id_str": null,
+    "in_reply_to_screen_name": null,
+    "user": {
+        "id": 113161641,
+        "id_str": "113161641",
+        "name": "Lisa Fielding",
+        "screen_name": "Lisa_Fielding",
+        "location": "Chicago, IL",
+        "description": "Anchor/Reporter @WBBMNewsradio Adjunct Prof, @MedillSchool @NorthwesternU. News, Sports, Cubs, Travel, Music & Lover of all things Chicago! @CBSChicago",
+        "url": "https://t.co/CQaDMkVeGJ",
+        "entities": {
+            "url": {
+                "urls": [
+                    {
+                        "url": "https://t.co/CQaDMkVeGJ",
+                        "expanded_url": "http://chicago.cbslocal.com/personality/lisa-fielding/",
+                        "display_url": "chicago.cbslocal.com/personality/li\u2026",
+                        "indices": [
+                            0,
+                            23
+                        ]
+                    }
+                ]
+            },
+            "description": {
+                "urls": []
+            }
+        },
+        "protected": false,
+        "followers_count": 2787,
+        "friends_count": 1333,
+        "listed_count": 179,
+        "created_at": "Wed Feb 10 22:29:27 +0000 2010",
+        "favourites_count": 805,
+        "utc_offset": -18000,
+        "time_zone": "Central Time (US & Canada)",
+        "geo_enabled": false,
+        "verified": true,
+        "statuses_count": 8277,
+        "lang": "en",
+        "contributors_enabled": false,
+        "is_translator": false,
+        "is_translation_enabled": false,
+        "profile_background_color": "192A34",
+        "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/132731940/mqpro_glowdotsBlue.br.jpg",
+        "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/132731940/mqpro_glowdotsBlue.br.jpg",
+        "profile_background_tile": false,
+        "profile_image_url": "http://pbs.twimg.com/profile_images/666032665678716928/MyHyVLx5_normal.jpg",
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/666032665678716928/MyHyVLx5_normal.jpg",
+        "profile_banner_url": "https://pbs.twimg.com/profile_banners/113161641/1414549833",
+        "profile_link_color": "0097DB",
+        "profile_sidebar_border_color": "0097DB",
+        "profile_sidebar_fill_color": "D1E1EB",
+        "profile_text_color": "000000",
+        "profile_use_background_image": true,
+        "has_extended_profile": true,
+        "default_profile": false,
+        "default_profile_image": false,
+        "following": false,
+        "follow_request_sent": false,
+        "notifications": false,
+        "translator_type": "none"
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 0,
+    "favorite_count": 0,
+    "favorited": false,
+    "retweeted": false,
+    "possibly_sensitive": false,
+    "lang": "en"
+}

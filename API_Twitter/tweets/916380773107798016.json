@@ -1,0 +1,105 @@
+{
+    "created_at": "Fri Oct 06 19:12:56 +0000 2017",
+    "id": 916380773107798016,
+    "id_str": "916380773107798016",
+    "text": "Vegas Shooter Got Aggressive with Chicago Hotel Manager Before Lollapalooza https://t.co/CvTKA0vUzZ",
+    "truncated": false,
+    "entities": {
+        "hashtags": [],
+        "symbols": [],
+        "user_mentions": [],
+        "urls": [
+            {
+                "url": "https://t.co/CvTKA0vUzZ",
+                "expanded_url": "http://ihe.art/wugW2BN",
+                "display_url": "ihe.art/wugW2BN",
+                "indices": [
+                    76,
+                    99
+                ]
+            }
+        ]
+    },
+    "metadata": {
+        "iso_language_code": "en",
+        "result_type": "recent"
+    },
+    "source": "<a href=\"http://www.socialflow.com\" rel=\"nofollow\">SocialFlow</a>",
+    "in_reply_to_status_id": null,
+    "in_reply_to_status_id_str": null,
+    "in_reply_to_user_id": null,
+    "in_reply_to_user_id_str": null,
+    "in_reply_to_screen_name": null,
+    "user": {
+        "id": 90979462,
+        "id_str": "90979462",
+        "name": "Froggy 99.9",
+        "screen_name": "froggy999fm",
+        "location": "Salisbury, MD",
+        "description": "#DelmarvaCountry with Whiskey & Randy in the morning! \ud83d\udc38 #iHeartCountry",
+        "url": "https://t.co/gBmk4zCzq5",
+        "entities": {
+            "url": {
+                "urls": [
+                    {
+                        "url": "https://t.co/gBmk4zCzq5",
+                        "expanded_url": "http://www.froggy999.com",
+                        "display_url": "froggy999.com",
+                        "indices": [
+                            0,
+                            23
+                        ]
+                    }
+                ]
+            },
+            "description": {
+                "urls": []
+            }
+        },
+        "protected": false,
+        "followers_count": 1214,
+        "friends_count": 1092,
+        "listed_count": 16,
+        "created_at": "Wed Nov 18 22:56:56 +0000 2009",
+        "favourites_count": 1117,
+        "utc_offset": -18000,
+        "time_zone": "Central Time (US & Canada)",
+        "geo_enabled": true,
+        "verified": false,
+        "statuses_count": 15259,
+        "lang": "en",
+        "contributors_enabled": false,
+        "is_translator": false,
+        "is_translation_enabled": false,
+        "profile_background_color": "C0DEED",
+        "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/238770693/180x180Froggy.png",
+        "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/238770693/180x180Froggy.png",
+        "profile_background_tile": false,
+        "profile_image_url": "http://pbs.twimg.com/profile_images/880788727135703040/1lBjjeu2_normal.jpg",
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/880788727135703040/1lBjjeu2_normal.jpg",
+        "profile_banner_url": "https://pbs.twimg.com/profile_banners/90979462/1494426505",
+        "profile_link_color": "0084B4",
+        "profile_sidebar_border_color": "C0DEED",
+        "profile_sidebar_fill_color": "DDEEF6",
+        "profile_text_color": "333333",
+        "profile_use_background_image": true,
+        "has_extended_profile": false,
+        "default_profile": false,
+        "default_profile_image": false,
+        "following": false,
+        "follow_request_sent": false,
+        "notifications": false,
+        "translator_type": "none"
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 0,
+    "favorite_count": 0,
+    "favorited": false,
+    "retweeted": false,
+    "possibly_sensitive": false,
+    "lang": "en"
+}
