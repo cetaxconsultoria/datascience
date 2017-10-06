@@ -2,8 +2,9 @@
 
 import tweepy
 import json
+import os
 
-def tweets_to_json(iterator, file_name):
+def tweets_to_json(iterator):
     """
     Function used in order to save the requested iterator as json format. Usually used to
     save tweets and all its features.
@@ -23,11 +24,12 @@ def tweets_to_json(iterator, file_name):
         raises an exception if something went wrong
     """
     try:
-        write_json = open('tweets.json', 'w')
+        #each tweet is put on a separeted file
         for tweet in iterator:
+            tweet_id = tweet._json["id_str"]
+            write_json = open(tweet_id+".json", 'w')
             json.dump(tweet._json,write_json,indent = 4)
-    
-        write_json.close()
+            write_json.close()
     except:
         raise
 
@@ -50,9 +52,10 @@ def get_api():
 
     #put your information here
     access_keys = {'consumer_key':'',
-                    'consumer_secret':'',
-                    'access_token':'',
-                    'access_token_secret':''}
+                'consumer_secret':'',
+                'access_token':'',
+                'access_token_secret':''}
+
 
     #authorization operations
     try:
@@ -70,7 +73,7 @@ def get_timeline(screen_name, count):
     -----------
     screen_name: str
         name of a twitter profile you want to downlaod tweets. Ex: @guilhermeslcs
-    count: int 
+    count: int
         number of tweets you want to get
 
     Returns:
@@ -79,22 +82,22 @@ def get_timeline(screen_name, count):
         Nothing is returned in this function. It just saves the tweets as json
     """
     api = get_api()
-    
+
     #get the 'count' most recent tweets from screen_name
     try:
         new_tweets = api.user_timeline(screen_name = screen_name,count=count)
     except:
         raise
     #writing information as json
-    tweets_to_json(new_tweets,'timeline_tweets.json')
-    
+    tweets_to_json(new_tweets)
+
 def get_search(search_key, count):
     """
     Funtion to get tweets from a search of a key word
 
     Parameters:
     ----------
-    search_key (str): 
+    search_key (str):
         the word or text you want to search tweets
     count (int):
         number of tweets you want to be listed
@@ -106,12 +109,25 @@ def get_search(search_key, count):
     """
     api = get_api()
     try:
-        tweets = tweepy.Cursor(api.search, q=search_key).items(count)
+        tweet_id = os.popen("ls *.json | tail -1").read().split('.')[-2]
+    except:
+        tweet_id = -1
+
+    try:
+        if tweet_id == -1:
+            tweets = tweepy.Cursor(api.search,
+                                q=search_key,
+                                wait_on_rate_limit=True).items(count)
+        else:
+            tweets = tweepy.Cursor(api.search,
+                                q=search_key,
+                                wait_on_rate_limit=True,
+                                since_id=tweet_id).items()
     except:
         raise
 
-    tweets_to_json(tweets,'searh_tweets.json')
+    tweets_to_json(tweets)
 
 if __name__ == '__main__':
     #get_timeline('@realDonaldTrump', 200)
-    get_search('lollapalooza',1)
+    get_search('lollapalooza',20)
