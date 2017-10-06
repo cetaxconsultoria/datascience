@@ -54,14 +54,14 @@ def get_report(analytics):
     	The dictionary with all the responses to the request
     """
     query = {"reportRequests": 
-              [{"viewId": "XXXXXX", "dateRanges":[{"startDate": "yesterday","endDate": "today"}],
+              [{"viewId": "XXXX", "dateRanges":[{"startDate": "yesterday","endDate": "today"}],
               "metrics": [{"expression": "ga:sessions"}, 
                           {"expression": "ga:sessionDuration"},
                           {"expression": "ga:avgTimeOnPage"},
                           {"expression": "ga:adClicks"},
                           {"expression": "ga:adCost"},
                           {"expression": "ga:CPM"},
-                          {"expression": "ga:CPC"},,
+                          {"expression": "ga:CPC"},
                           {"expression": "ga:pageviews"}],
               "dimensions": [{"name": "ga:campaign"}]
               }]
