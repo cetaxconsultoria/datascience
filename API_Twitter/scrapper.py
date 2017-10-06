@@ -113,7 +113,7 @@ def get_search(search_key, count):
         tweet_id = -1
 
     try:
-        if id == -1:
+        if tweet_id == -1:
             tweets = tweepy.Cursor(api.search,
                                 q=search_key,
                                 wait_on_rate_limit=True).items(count)
@@ -122,7 +122,6 @@ def get_search(search_key, count):
                                 q=search_key,
                                 wait_on_rate_limit=True,
                                 since_id=tweet_id).items()
-
     except:
         raise
 
@@ -130,4 +129,4 @@ def get_search(search_key, count):
 
 if __name__ == '__main__':
     #get_timeline('@realDonaldTrump', 200)
-    get_search('lollapalooza',10)
+    get_search('lollapalooza',20)
