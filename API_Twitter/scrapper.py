@@ -2,8 +2,9 @@
 
 import tweepy
 import json
+import os
 
-def tweets_to_json(iterator, file_name):
+def tweets_to_json(iterator):
     """
     Function used in order to save the requested iterator as json format. Usually used to
     save tweets and all its features.
@@ -23,6 +24,7 @@ def tweets_to_json(iterator, file_name):
         raises an exception if something went wrong
     """
     try:
+        #each tweet is put on a separeted file
         for tweet in iterator:
             tweet_id = tweet._json["id_str"]
             write_json = open(tweet_id+".json", 'w')
@@ -86,7 +88,7 @@ def get_timeline(screen_name, count):
     except:
         raise
     #writing information as json
-    tweets_to_json(new_tweets,'timeline_tweets.json')
+    tweets_to_json(new_tweets)
 
 def get_search(search_key, count):
     """
@@ -106,12 +108,26 @@ def get_search(search_key, count):
     """
     api = get_api()
     try:
-        tweets = tweepy.Cursor(api.search, q=search_key).items(count)
+        tweet_id = os.popen("ls *.json | tail -1").read().split('.')[-2]
+    except:
+        tweet_id = -1
+
+    try:
+        if id == -1:
+            tweets = tweepy.Cursor(api.search,
+                                q=search_key,
+                                wait_on_rate_limit=True).items(count)
+        else:
+            tweets = tweepy.Cursor(api.search,
+                                q=search_key,
+                                wait_on_rate_limit=True,
+                                since_id=tweet_id).items()
+
     except:
         raise
 
-    tweets_to_json(tweets,'searh_tweets.json')
+    tweets_to_json(tweets)
 
 if __name__ == '__main__':
     #get_timeline('@realDonaldTrump', 200)
-    get_search('lollapalooza',200)
+    get_search('lollapalooza',10)
